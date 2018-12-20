@@ -117,7 +117,9 @@ if __name__ == '__main__':
                   'Defense': CSW.stats['Defense'],
                   'Special': CSW.stats['Special'],
                   'Moves': CSW.stats['Moves'],
-                  'Items': CSW.stats['Items']}
+                  'Items': CSW.stats['Items'],
+                  'Banned': CSW.stats['Banned'],
+                  'Replacement': CSW.stats['Replacement']}
     with open('{}.py'.format(CONTESTANT_NAME.lower()), 'w') as f:
         f.write(STUB_TEXT.format(CSWEEKMON_NAME, STATS_DICT))
     f.close()
